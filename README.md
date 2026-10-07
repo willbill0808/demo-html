@@ -1,7 +1,7 @@
 # oppgaver:
 * home-page: rehan
 * profile: william
-* sign-in: rehan
+* sign-in/login: rehan
 * handlekurv: william
 
 kjøpehistorik: ?
