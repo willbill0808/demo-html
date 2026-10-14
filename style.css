@@ -1,14 +1,25 @@
+body{
+    background-color:#CF5376;
+    padding: 5px;
+
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    border: solid, 6px, violet;
+    align-items: center;
+    background-color: #ffa75f;
     border-radius: 15px;
     padding: 15px;
+    margin: 5px;
 }
 
 .nav_knapper {
-    border: solid, 6px, blue;
+    background-color: #ff8559;
+    border: none;
     padding: 5px;
+    width: 15vw;
+    height: 7vw;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -16,9 +27,33 @@ nav {
 
 }
 
+.nav_knapper:hover{
+    border: #CF5376, 3px, solid;
+}
+
 #profile-nav-img {
     border-radius: 50%;
-    width: 100px
+    width: 15vh;
+    height: 15vh;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: #fcc89d;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+#profile_info, #credit-card_info{
+    background-color: #f9d8bc;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    width: 25vw;
+    text-align: center;
 }
 
 #profile-img {
