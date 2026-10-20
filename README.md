@@ -4,8 +4,6 @@
 * sign-in/login: rehan
 * handlekurv: william
 
-kjøpehistorik: ?
-
 # Farger
 https://www.figma.com/resource-library/color-combinations/#combination-33-guava
 

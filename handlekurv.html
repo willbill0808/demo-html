@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>boksere</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/handle_kurv.css">
 </head>
 
 <body>
+
     <nav>
         <button class="nav_knapper" id="homepage_knapp" onclick="window.location.href='home.html'">
             <h2>Homepage</h2>
         </button>
         <button class="nav_knapper" id="handle-kurv_knapp" onclick="window.location.href='handlekurv.html'">
             <h2>Handle kurv</h2>
-        </button>
-        <button class="nav_knapper" id="kjoopehstorik_knapp" onclick="window.location.href='kjoopehstorik_knapp.html'">
-            <h2>Historik</h2>
         </button>
         <button class="nav_knapper" id="sign-in_knapp" onclick="window.location.href='sign-in.html'">
             <h2>Sign in</h2>
@@ -28,6 +27,71 @@
         <img class="nav_knapper" id="profile-nav-img" src="assets/profile.png" alt=""
             onclick="window.location.href='profile.html'">
     </nav>
+
+    <div class="kjopsomrade">
+        <h2>Din bestilling</h2>
+
+        <p>Antall produkter: 6</p>
+        <p>Frakt: 49 kr</p>
+        <p class="totalpris">Totalpris: 1084 kr</p>
+
+        <button class="kjop-knapp" onclick="window.location.href='handlekurv.html'">
+            Kjøp nå
+        </button>
+    </div>
+
+    <div class="produkter">
+
+        <div class="produkt">
+            <img src="assets/vare.webp" alt="Bokser: Sort">
+            <h2>Bokser: Sort</h2>
+            <p>Pris: 199 kr</p>
+            <p>På lager: 25 stk.</p>
+            <p>Vurdering: 4.8/5</p>
+        </div>
+
+        <div class="produkt">
+            <img src="assets/vare.webp" alt="Bokser: Blå">
+            <h2>Bokser: Blå</h2>
+            <p>Pris: 179 kr</p>
+            <p>På lager: 18 stk.</p>
+            <p>Vurdering: 4.2/5</p>
+        </div>
+
+        <div class="produkt">
+            <img src="assets/vare.webp" alt="Bokser: Grå">
+            <h2>Bokser: Grå</h2>
+            <p>Pris: 189 kr</p>
+            <p>På lager: 12 stk.</p>
+            <p>Vurdering: 4.5/5</p>
+        </div>
+
+        <div class="produkt">
+            <img src="assets/vare.webp" alt="Bokser: Hvit">
+            <h2>Bokser: Hvit</h2>
+            <p>Pris: 169 kr</p>
+            <p>På lager: 30 stk.</p>
+            <p>Vurdering: 4.1/5</p>
+        </div>
+
+        <div class="produkt">
+            <img src="assets/vare.webp" alt="Bokser: Rød">
+            <h2>Bokser: Rød</h2>
+            <p>Pris: 199 kr</p>
+            <p>På lager: 8 stk.</p>
+            <p>Vurdering: 4.7/5</p>
+        </div>
+
+        <div class="produkt">
+            <img src="assets/vare.webp" alt="Bokser: Grønn">
+            <h2>Bokser: Grønn</h2>
+            <p>Pris: 189 kr</p>
+            <p>På lager: 15 stk.</p>
+            <p>Vurdering: 4.3/5</p>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
