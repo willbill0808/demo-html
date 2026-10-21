@@ -1,0 +1,53 @@
+#sign-in-main {
+    display: flex; /* Plasserer skjemaet i midten */
+    justify-content: center;
+    padding: 30px;
+}
+
+.sign-in-container {
+    background-color: #ffa75f; /* Oransje bakgrunn */
+    padding: 25px;
+    width: 350px;
+    border-radius: 15px; /* Runde hjørner */
+    text-align: center;
+}
+
+.sign-in-container h1 {
+    color: #4a202d; /* Mørk tekst */
+}
+
+.sign-in-input-group {
+    text-align: left;
+    margin-bottom: 15px; /* Avstand mellom feltene */
+}
+
+.sign-in-input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sign-in-input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff5ed;
+}
+
+#sign-in-submit {
+    background-color: #ff8559; /* Knappens farge */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer; /* Viser hånd når du peker */
+}
+
+#sign-in-submit:hover {
+    background-color: #CF5376; /* Farge når du holder over */
+}
+
+.sign-in-login-link a {
+    color: #8a2446; /* Farge på innloggingslenken */
+}
