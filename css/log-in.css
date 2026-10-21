@@ -1,0 +1,62 @@
+/* Plasserer innloggingsboksen midt på siden */
+#log-in-main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Utseendet til innloggingsboksen */
+.log-in-container {
+    background-color: #ffa75f;
+    padding: 25px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Fargen på overskriften */
+.log-in-container h1 {
+    color: #4a202d;
+}
+
+/* Lager avstand mellom input-gruppene */
+.log-in-input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Plasserer teksten over hvert felt */
+.log-in-input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Utseendet til feltene */
+.log-in-input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff5ed;
+}
+
+/* Utseendet til innloggingsknappen */
+#log-in-submit {
+    background-color: #ff8559;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Endrer fargen når du holder over knappen */
+#log-in-submit:hover {
+    background-color: #CF5376;
+}
+
+/* Farge på lenken til registrering */
+.log-in-sign-in-link a {
+    color: #8a2446;
+}

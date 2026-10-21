@@ -1,170 +1,102 @@
-<!DOCTYPE html>
-<html lang="no">
+<!DOCTYPE html> <!-- Forteller nettleseren at dette er HTML -->
+<html lang="no"> <!-- Setter språket til norsk -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - Create Account</title>
+<head> <!-- Informasjon om nettsiden -->
+    <meta charset="UTF-8"> <!-- Støtter norske bokstaver -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tilpasser til mobil -->
+    <title>Sign In</title> <!-- Navnet på fanen -->
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/sign-in.css">
+    <link rel="stylesheet" href="style.css"> <!-- Kobler til CSS -->
+    <link rel="stylesheet" href="css/sign-in.css"> <!-- Kobler til sign-in CSS -->
 </head>
 
-<body>
+<body> <!-- Her begynner nettsiden -->
 
-    <!-- Navigasjonsmeny -->
-    <nav>
-        <button class="nav_knapper" id="homepage_knapp"
-            onclick="window.location.href='home.html'">
-            <h2>Homepage</h2>
+    <nav> <!-- Navigasjonsmenyen -->
+
+        <button class="nav_knapper" onclick="window.location.href='home.html'">
+            <h2>Homepage</h2> <!-- Går til forsiden -->
         </button>
 
-        <button class="nav_knapper" id="handle-kurv_knapp"
-            onclick="window.location.href='handlekurv.html'">
-            <h2>Handle kurv</h2>
+        <button class="nav_knapper" onclick="window.location.href='handlekurv.html'">
+            <h2>Handle kurv</h2> <!-- Går til handlekurven -->
         </button>
 
-        <button class="nav_knapper" id="sign-in_knapp"
-            onclick="window.location.href='sign-in.html'">
-            <h2>Sign in</h2>
+        <button class="nav_knapper" onclick="window.location.href='sign-in.html'">
+            <h2>Sign in</h2> <!-- Går til registrering -->
         </button>
 
-        <button class="nav_knapper" id="log-in_knapp"
-            onclick="window.location.href='log-in.html'">
-            <h2>Log in</h2>
+        <button class="nav_knapper" onclick="window.location.href='log-in.html'">
+            <h2>Log in</h2> <!-- Går til innlogging -->
         </button>
 
-        <img class="nav_knapper"
-            id="profile-nav-img"
-            src="assets/profile.png"
-            alt="Profil"
-            onclick="window.location.href='profil.html'">
+        <img class="nav_knapper" id="profile-nav-img"
+             src="assets/profile.png" alt="Profil"
+             onclick="window.location.href='profile.html'">
+        <!-- Går til profilsiden -->
+
     </nav>
 
-    <!-- Registreringsside -->
-    <main id="sign-in-main">
+    <main id="sign-in-main"> <!-- Hovedinnholdet på siden -->
 
-        <div class="sign-in-container">
+        <div class="sign-in-container"> <!-- Boks rundt skjemaet -->
 
-            <h1>Create Account</h1>
+            <h1>Create Account</h1> <!-- Overskrift -->
 
-            <p class="sign-in-subtitle">
-                Create an account to get started!
-            </p>
+            <p>Lag en konto for å komme i gang!</p> <!-- Informasjon -->
 
-            <form id="sign-in-form">
+            <form> <!-- Starter skjemaet -->
 
-                <div class="sign-in-input-group">
-                    <label for="fornavn">Fornavn</label>
-                    <input
-                        type="text"
-                        id="fornavn"
-                        name="fornavn"
-                        placeholder="Skriv inn fornavnet ditt"
-                        autocomplete="given-name"
-                        required>
+                <div class="sign-in-input-group"> <!-- Fornavn -->
+                    <label for="fornavn">Fornavn</label> <!-- Tekst over feltet -->
+                    <input type="text" id="fornavn" name="fornavn"
+                           placeholder="Skriv inn fornavnet ditt" required>
+                    <!-- Felt for fornavn -->
                 </div>
 
-                <div class="sign-in-input-group">
+                <div class="sign-in-input-group"> <!-- Etternavn -->
                     <label for="etternavn">Etternavn</label>
-                    <input
-                        type="text"
-                        id="etternavn"
-                        name="etternavn"
-                        placeholder="Skriv inn etternavnet ditt"
-                        autocomplete="family-name"
-                        required>
+                    <input type="text" id="etternavn" name="etternavn"
+                           placeholder="Skriv inn etternavnet ditt" required>
+                    <!-- Felt for etternavn -->
                 </div>
 
-                <div class="sign-in-input-group">
+                <div class="sign-in-input-group"> <!-- E-post -->
                     <label for="epost">E-post</label>
-                    <input
-                        type="email"
-                        id="epost"
-                        name="epost"
-                        placeholder="navn@eksempel.no"
-                        autocomplete="email"
-                        required>
+                    <input type="email" id="epost" name="epost"
+                           placeholder="Skriv inn e-posten din" required>
+                    <!-- Felt for e-post -->
                 </div>
 
-                <div class="sign-in-input-group">
+                <div class="sign-in-input-group"> <!-- Passord -->
                     <label for="passord">Passord</label>
-                    <input
-                        type="password"
-                        id="passord"
-                        name="passord"
-                        placeholder="Lag et passord"
-                        autocomplete="new-password"
-                        minlength="8"
-                        required>
+                    <input type="password" id="passord" name="passord"
+                           placeholder="Lag et passord" required>
+                    <!-- Felt for passord -->
                 </div>
 
-                <div class="sign-in-input-group">
+                <div class="sign-in-input-group"> <!-- Bekreft passord -->
                     <label for="bekreft-passord">Bekreft passord</label>
-                    <input
-                        type="password"
-                        id="bekreft-passord"
-                        name="bekreft-passord"
-                        placeholder="Skriv passordet på nytt"
-                        autocomplete="new-password"
-                        minlength="8"
-                        required>
+                    <input type="password" id="bekreft-passord"
+                           name="bekreft-passord"
+                           placeholder="Skriv passordet på nytt" required>
+                    <!-- Felt for å skrive passordet igjen -->
                 </div>
 
                 <button type="submit" id="sign-in-submit">
-                    Create Account
+                    Create Account <!-- Knapp for å registrere seg -->
                 </button>
 
-                <p id="sign-in-message" role="status"></p>
+            </form> <!-- Avslutter skjemaet -->
 
-            </form>
-
-            <p class="sign-in-login-link">
+            <p class="sign-in-login-link"> <!-- Tekst under skjemaet -->
                 Har du allerede en konto?
-                <a href="log-in.html">Log in</a>
+                <a href="log-in.html">Log in</a> <!-- Lenke til innlogging -->
             </p>
 
         </div>
 
     </main>
 
-    <script>
-        const signInForm = document.getElementById("sign-in-form");
-        const password = document.getElementById("passord");
-        const confirmPassword = document.getElementById("bekreft-passord");
-        const message = document.getElementById("sign-in-message");
-
-        confirmPassword.addEventListener("input", function () {
-            if (confirmPassword.value !== password.value) {
-                confirmPassword.setCustomValidity("Passordene er ikke like.");
-            } else {
-                confirmPassword.setCustomValidity("");
-            }
-        });
-
-        password.addEventListener("input", function () {
-            if (confirmPassword.value !== password.value) {
-                confirmPassword.setCustomValidity("Passordene er ikke like.");
-            } else {
-                confirmPassword.setCustomValidity("");
-            }
-        });
-
-        signInForm.addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            if (password.value !== confirmPassword.value) {
-                message.textContent = "Passordene er ikke like.";
-                confirmPassword.focus();
-                return;
-            }
-
-            message.textContent =
-                "Skjemaet er gyldig! Registrering må kobles til et system for å opprette kontoen.";
-        });
-    </script>
-
-</body>
-
-</html>
- 
+</body> <!-- Avslutter nettsiden -->
+</html> <!-- Avslutter HTML -->

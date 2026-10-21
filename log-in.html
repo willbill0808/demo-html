@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- HTML-dokument -->
+<html lang="no"> <!-- Språk er norsk -->
+
+<head> <!-- Informasjon om nettsiden -->
+    <meta charset="UTF-8"> <!-- Støtter norske bokstaver -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobiltilpasning -->
+    <title>Log In</title> <!-- Tittel på fanen -->
+    <link rel="stylesheet" href="style.css"> <!-- Kobler til CSS -->
+    <link rel="stylesheet" href="css/log-in.css"> <!-- Kobler til login CSS -->
+</head>
+
+<body> <!-- Starter nettsiden -->
+
+    <nav> <!-- Navigasjonsmeny -->
+        <button class="nav_knapper" onclick="window.location.href='home.html'">
+            <h2>Homepage</h2> <!-- Forside -->
+        </button>
+
+        <button class="nav_knapper" onclick="window.location.href='handlekurv.html'">
+            <h2>Handle kurv</h2> <!-- Handlekurv -->
+        </button>
+
+        <button class="nav_knapper" onclick="window.location.href='sign-in.html'">
+            <h2>Sign in</h2> <!-- Registrering -->
+        </button>
+
+        <button class="nav_knapper" onclick="window.location.href='log-in.html'">
+            <h2>Log in</h2> <!-- Innlogging -->
+        </button>
+
+        <img class="nav_knapper" id="profile-nav-img"
+             src="assets/profile.png" alt="Profil"
+             onclick="window.location.href='profile.html'">
+        <!-- Profilbilde -->
+
+    </nav>
+
+    <main id="log-in-main"> <!-- Hovedinnhold -->
+
+        <div class="log-in-container"> <!-- Boks rundt skjemaet -->
+
+            <h1>Log In</h1> <!-- Overskrift -->
+            <p>Logg inn på kontoen din!</p> <!-- Informasjon -->
+
+            <form> <!-- Innloggingsskjema -->
+
+                <div class="log-in-input-group"> <!-- E-post -->
+                    <label for="epost">E-post</label> <!-- Feltets navn -->
+                    <input type="email" id="epost" name="epost"
+                           placeholder="Skriv inn e-posten din" required>
+                </div>
+
+                <div class="log-in-input-group"> <!-- Passord -->
+                    <label for="passord">Passord</label> <!-- Feltets navn -->
+                    <input type="password" id="passord" name="passord"
+                           placeholder="Skriv inn passordet ditt" required>
+                </div>
+
+                <button type="submit" id="log-in-submit">
+                    Log In <!-- Innloggingsknapp -->
+                </button>
+
+            </form>
+
+            <p class="log-in-sign-in-link"> <!-- Lenke til registrering -->
+                Har du ikke en konto?
+                <a href="sign-in.html">Create Account</a>
+            </p>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
